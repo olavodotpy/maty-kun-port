@@ -1,0 +1,107 @@
+html, body{
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #000000, #210435);
+}
+
+*head{
+    .orbitron-uniquifier> {
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+}
+
+nav{
+    position: relative;
+    z-index: 3;
+}
+
+.header-nav .nav-logo img{
+    width: 50px;
+    display: inline;
+    z-index: 1;
+    padding: 1rem;
+    float: left;
+}
+
+.header-nav .nav-logo h1{
+    text-align: center;
+    font-size: xx-large;
+    display: inline;
+    z-index: 1;
+    float: left;
+    color: #ff00ff;
+}
+
+.header-nav .nav-links{
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+/* clearfix */
+.header-nav:before,
+.header-nav:after {
+    content: "";
+    display: block;
+} 
+.header-nav:after {
+    clear: both;
+}
+
+.nav-button{
+    padding: 0.3rem;
+    z-index: 5;
+}
+
+.nav-button button{
+    font-family: "Orbitron", sans-serif;
+    background-color: #ff00ff;
+    border-width: 10px;
+    border-radius: 9999px;
+    border: 1px solid #09e98f00;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.nav-button button:hover{
+    background: #39FF14;
+    border-radius: 9999px;
+    border: 1px solid #42092f81 center;
+    transform: translate(-3px, -4px);
+    text-decoration: none;
+}
+
+.content .image-section{
+    padding: 1rem;
+}
+
+.content .image-section h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #ff6600;
+}
+
+.content .image-section img{
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    margin: auto;
+    max-width: 700px;
+    height: 400px;
+    padding-bottom: 10px;
+    border: 0;
+}
+
+footer .foo-color{
+    background: #6e0dd0;
+    overflow: hidden;
+    padding: 40px 0;
+    position: absolute;
+    width: 100%;
+}
