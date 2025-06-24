@@ -1,22 +1,29 @@
 html, body{
-    height: 100vh;
-    margin: 0;
     font-family: sans-serif;
-    background: linear-gradient(to right, #000000, #210435);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: 
+        linear-gradient(
+            to right,
+            #0d0015 0%,
+            #1a002d 20%,
+            #200036 40%,
+            #270042 60%,
+            #290042 80%,
+            #320051 90%
+    );
 }
 
 *head{
-    .orbitron-uniquifier> {
+    .orbitron-uniquifier{
         font-family: "Orbitron", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
     }
-}
-
-nav{
-    position: relative;
-    z-index: 3;
 }
 
 .header-nav .nav-logo img{
@@ -28,6 +35,9 @@ nav{
 }
 
 .header-nav .nav-logo h1{
+    font-family: "Orbitron", sans-serif;
+    display: block;
+    letter-spacing: 1px;
     text-align: center;
     font-size: xx-large;
     display: inline;
@@ -81,10 +91,15 @@ nav{
 }
 
 .content .image-section h2{
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-content: center;
-    color: #ff6600;
+    background: linear-gradient(45deg, red, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .content .image-section img{
@@ -92,16 +107,35 @@ nav{
     justify-content: start;
     align-content: center;
     margin: auto;
-    max-width: 700px;
-    height: 400px;
-    padding-bottom: 10px;
+    max-height: 600px;
+    max-width: 400px;
     border: 0;
 }
 
-footer .foo-color{
-    background: #6e0dd0;
+footer{
     overflow: hidden;
     padding: 40px 0;
     position: absolute;
     width: 100%;
+    margin: 0;
+}
+
+footer span{
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    color: #00ffbc;
+    text-align: center;
+    justify-content: center;
+    padding: 1px 0;
+    font-weight: 300;
+    font-size: 0.85em;
+}
+
+footer span a{
+    color: #00ffbc;
+}
+
+footer span a:hover{
+    color: #39FF14;
 }
